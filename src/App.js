@@ -1,22 +1,18 @@
-import logo from './logo.svg';
+import { Button, ButtonBase, ButtonGroup } from '@mui/material';
 import './App.css';
+import Contador from './components/Contador';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h1>Olá mundo</h1>
+        <ButtonGroup variant="contained" aria-label="outlined primary button group">
+          <Button>Uno</Button>
+          <Button>Two</Button>
+          <Button>Três</Button>
+        </ButtonGroup>
+        <Contador />
       </header>
     </div>
   );
