@@ -21,11 +21,11 @@ const Contador = () => {
     }, [contador]
   )
 
-  useEffect(
-    () => {
-      console.log("Fui chamado Aux")
-    }, [contadorAux]
-  )
+  // useEffect(
+  //   () => {
+  //     console.log("Fui chamado Aux")
+  //   }, [contadorAux]
+  // )
 
   return (
     <div>

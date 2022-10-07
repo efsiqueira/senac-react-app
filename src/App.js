@@ -1,18 +1,16 @@
-import { Button, ButtonBase, ButtonGroup } from '@mui/material';
 import './App.css';
 import Contador from './components/Contador';
+import FetchNews from './components/FetchNews';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <h1>Olá mundo</h1>
-        <ButtonGroup variant="contained" aria-label="outlined primary button group">
-          <Button>Uno</Button>
-          <Button>Two</Button>
-          <Button>Três</Button>
-        </ButtonGroup>
-        <Contador />
+        <div style={{ padding: "2rem" }}>
+          <FetchNews />
+          <Contador />
+        </div>
       </header>
     </div>
   );
