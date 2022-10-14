@@ -11,21 +11,15 @@ const Contador = () => {
   }
 
   useEffect(() => {
-      if (contador > 12) {
-        setContadorAux(true)
-        setMensagem("O ano possui apenas 12 meses")
-      }
-      else {
-        setContadorAux(false)
-      }
-    }, [contador]
+    if (contador > 12) {
+      setContadorAux(true)
+      setMensagem("O ano possui apenas 12 meses")
+    }
+    else {
+      setContadorAux(false)
+    }
+  }, [contador]
   )
-
-  // useEffect(
-  //   () => {
-  //     console.log("Fui chamado Aux")
-  //   }, [contadorAux]
-  // )
 
   return (
     <div>

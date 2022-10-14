@@ -33,10 +33,11 @@ const FetchNews = () => {
               marginBottom: "1rem",
               textAlign: "left",
               padding: "1rem",
-              borderRadius: "1rem"
+              borderRadius: "2rem"
             }
-          }>
-            <div key={noticia.id}>
+          }
+          key={noticia.id}>
+            <div>
               <h2>{noticia.title}</h2>
               <div>{noticia.body}</div>
             </div>

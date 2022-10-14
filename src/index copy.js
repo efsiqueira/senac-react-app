@@ -1,5 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { BrowserRouter, Route } from 'react-router-dom';
+import ErrorPage from './components/ErrorPage';
+import FetchNews from './components/FetchNews';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import Root from './routes/root';
@@ -7,7 +10,12 @@ import Root from './routes/root';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Root />
+    <BrowserRouter>
+      <Route path='/' element={<Root />} errorElement={<ErrorPage />}>
+        <Route path='noticias' element={<FetchNews />}></Route>
+        <Route path='sobre' element={<FetchNews />}></Route>
+      </Route>
+    </BrowserRouter>
   </React.StrictMode>
 );
 
